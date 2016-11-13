@@ -1,6 +1,6 @@
 import styles from './app.css';
 import app from './app.js';
-const d3 = Object.assign({},
+let d3 = Object.assign({},
     require("d3-force"),
     require("d3-selection"),
     require("d3-scale"),
