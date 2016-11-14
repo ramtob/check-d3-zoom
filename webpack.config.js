@@ -26,5 +26,8 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("styles.css")
     ],
-    devtool: 'source-map'
+    devtool: 'source-map',
+    resolve: {
+        packageMains: ["module", "webpack", "browser", "web", "browserify", ["jam", "main"], "main"]
+    }
 };
