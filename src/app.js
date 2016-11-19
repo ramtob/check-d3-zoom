@@ -1,3 +1,5 @@
+import {event} from 'd3-selection';
+
 export default function (d3) {
     var svg = d3.select("svg"),
         width = +svg.attr("width"),
@@ -190,7 +192,8 @@ export default function (d3) {
     var currentScale = 1;
 
     var zoomed = function() {
-        var t = d3.event.transform;
+        //console.log(event);
+        var t = event.transform;
         if (t.k !== currentScale) {
             currentScale = t.k;
             console.log('new scale: ' + currentScale);
