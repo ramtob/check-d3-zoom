@@ -199,7 +199,7 @@ export default function (d3) {
             console.log('new scale: ' + currentScale);
             setPanningLimit();
         }
-        console.log('transform: ' + t.k)
+        // console.log('transform: ' + t.k)
         node.attr('transform', t);
         link.attr('transform', t);
     };
